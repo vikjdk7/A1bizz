@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Record For Your Transferred Amount</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Business Subscription Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/transfer-style.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/font-awesome1.css"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+<body>
+	<div class="center-container">
+		<!--header-->
+		<div class="header-w3l">
+			<h1><span>T</span>ransfered <span>M</span>oney <span>R</span>ecord</h1>
+			 <button type="button" class="btn btn-primary" onclick="location.replace('index.html'),'_top'">Home</button>
+		</div>
+		<!--//header-->
+		<!--main-->
+		<div class="main-content-agile">
+			<div class="wthree-pro">
+				<h2>Transfer Money</h2>
+			</div>
+			<div class="sub-main-w3">	
+			<form action="transfer-money.php"  method="post">
+
+	<?php if(!empty($success_message)) { ?>
+	<div class="success_message"><?php echo $success_message; ?></div>
+	<?php } ?>
+
+	<div id="validation-message">
+		<?php if(!empty($error_message)) { ?>
+	<?php echo $error_message; ?>
+	<?php } ?>
+	</div>
+
+
+	
+	<div class="field-group">
+		<div><label for="email">Account Holder name</label></div>
+		<div><input type="text" name="accname" id="user-email" class="input-field"></div>
+	</div>
+	
+	<div class="field-group">
+		<div><label for="email">Acc No.</label></div>
+		<div><input type="text" name="accno" id="accno" class="input-field"></div>
+	</div>
+	
+	<div class="field-group">
+		<div><label for="email">Amount</label></div>
+		<div><input type="text" name="amount" id="amount" class="input-field"></div>
+	</div>
+	
+	<div class="field-group">
+		<div><label for="ifsc">IFSC Code</label></div>
+		<div><input type="text" name="ifsc" id="ifsc" class="input-field"></div>
+	</div>
+	
+		<div class="field-group">
+		<div><label for="email">Email</label></div>
+		<div><input type="text" name="email" id="email" class="input-field"></div>
+	</div>
+	
+	
+	<div class="field-group">
+		<div><input type="submit" name="submit" id="forgot-password" value="Transfer" class="form-submit-button"></div>
+	</div>	
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

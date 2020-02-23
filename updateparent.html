@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Thank You For Your Intesrest. Encounter Awesomeness</title>
+<!-- Meta tag Keywords -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Business Subscription Form Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style1.css" type="text/css" media="all" /> <!-- Style-CSS --> 
+<link rel="stylesheet" href="css/font-awesome1.css"> <!-- Font-Awesome-Icons-CSS -->
+<!-- //css files -->
+<!-- web-fonts -->
+<link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<!-- //web-fonts -->
+</head>
+<body>
+	<div class="center-container">
+		<!--header-->
+		<div class="header-w3l">
+			<h1><span>B</span>usiness <span>S</span>ubscription <span>F</span>orm</h1>
+			 <button type="button" class="btn btn-primary" onclick="location.replace('index.html'),'_top'">Home</button>
+		</div>
+		<!--//header-->
+		<!--main-->
+		<div class="main-content-agile">
+			<div class="wthree-pro">
+				<h2>UPDATE Parent</h2>
+			</div>
+			<div class="sub-main-w3">	
+			<form action="update-parent.php"  method="post">
+
+	<?php if(!empty($success_message)) { ?>
+	<div class="success_message"><?php echo $success_message; ?></div>
+	<?php } ?>
+
+	<div id="validation-message">
+		<?php if(!empty($error_message)) { ?>
+	<?php echo $error_message; ?>
+	<?php } ?>
+	</div>
+
+
+	
+	<div class="field-group">
+		<div><label for="email">Email</label></div>
+		<div><input type="text" name="email" id="user-email" class="input-field"></div>
+	</div>
+	
+	<div class="field-group">
+		<div><label for="email">Parent Email</label></div>
+		<div><input type="text" name="oldparentemail" id="oldparent-email" class="input-field"></div>
+	</div>
+	
+	<div class="field-group">
+		<div><label for="email">New Parent Email</label></div>
+		<div><input type="text" name="newparentemail" id="newparent-email" class="input-field"></div>
+	</div>
+	
+	<div class="field-group">
+		<div><input type="submit" name="submit" id="forgot-password" value="Submit" class="form-submit-button"></div>
+	</div>	
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
